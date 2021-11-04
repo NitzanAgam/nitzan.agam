@@ -1,0 +1,21 @@
+
+body{ 
+    background-color: cornflowerblue;
+    border: 2px solid lightgray;
+}
+
+h1{ /* by the name of the element*/
+    color: lightpink; 
+}
+
+#P1 { /* by id of the element*/
+    color: rgb(217, 240, 239);
+}
+
+.Header { /* by class of same elements, class wins name */
+    color: maroon;
+}
+
+#H11{ /*id wins class and name*/
+    color: mediumslateblue;
+}
