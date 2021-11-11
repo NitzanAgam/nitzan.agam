@@ -1,0 +1,58 @@
+:root{
+    --rustRed: #BC4639;
+    --brown: #5C2018;
+    --salmon: #D4A59A;
+    --beigh: #F3E0DC;
+    --blue: #4285F4;
+}
+
+body {
+    background-color: var(--beigh);
+}
+
+#GridContainer {
+    display: grid;
+    grid-template-areas: 
+    'header header header' /*first row determain the num of columns*/
+    'left main main'
+    'left main main';
+}
+
+#item1 {
+    grid-area: header;
+    height: 100px;
+    width: 913px;
+    padding: 20px;
+    margin: 20px ;
+    background-color: var(--salmon);
+}
+
+#item2 {
+    grid-area: left;
+    height: 100px;
+    width: 200px;
+    padding: 20px;
+    margin: 20px ;
+    background-color: var(--salmon);
+}
+
+#item3 {
+    grid-area: main;
+    height: 100px;
+    width: 500px;
+    padding: 20px;
+    margin: 20px ;
+    background-color: var(--salmon);
+}
+div div {
+    color: var(--blue);
+}
+div {
+    border: 2px solid var(--brown);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: var(--rustRed);
+    }
+}
