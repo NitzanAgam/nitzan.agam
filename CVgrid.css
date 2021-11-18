@@ -9,7 +9,9 @@
 body {
     background-color: var(--beigh);
 }
-
+div {
+    font-family: Lucida Handwriting;
+}
 #GridContainer {
     display: grid;
     grid-template-areas: 
@@ -25,6 +27,7 @@ body {
     padding: 20px;
     margin: 20px ;
     background-color: var(--salmon);
+    font-size: 50px;
 }
 
 #item2 {
@@ -46,9 +49,8 @@ body {
 }
 div div {
     color: var(--blue);
-}
-div {
-    border: 2px solid var(--brown);
+    font-size: 20px;
+    border: solid 2px var(--brown);
 }
 
 @media only screen and (max-width: 600px) {
@@ -56,3 +58,25 @@ div {
         background-color: var(--rustRed);
     }
 }
+div {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+
+button {
+    height: 30%;
+    font-size: 20px;
+    background-color: var(--beigh);
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+}
+
+@keyframes blink {
+    0% {background-color: var(--blue); border-radius: 0%;}
+    50% {background-color: var(--beigh); border-radius: 25%;}
+    100% {background-color: var(--blue); border-radius: 100%;}
+
+}
+
