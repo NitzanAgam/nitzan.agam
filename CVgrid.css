@@ -3,13 +3,15 @@
     --brown: #5C2018;
     --salmon: #D4A59A;
     --beigh: #F3E0DC;
-    --blue: #4285F4;
+    --blue: #3265b8;
 }
-
+textarea {
+    margin-top: 5px;
+}
 body {
     background-color: var(--beigh);
 }
-div {
+* {
     font-family: Lucida Handwriting;
 }
 #GridContainer {
@@ -23,7 +25,7 @@ div {
 #item1 {
     grid-area: header;
     height: 100px;
-    width: 913px;
+    width: 1000px;
     padding: 20px;
     margin: 20px ;
     background-color: var(--salmon);
@@ -32,25 +34,26 @@ div {
 
 #item2 {
     grid-area: left;
-    height: 100px;
-    width: 200px;
-    padding: 20px;
-    margin: 20px ;
+    height: 500px;
+    width: 460px;
     background-color: var(--salmon);
 }
 
 #item3 {
     grid-area: main;
-    height: 100px;
-    width: 500px;
-    padding: 20px;
-    margin: 20px ;
+    height: 500px;
+    width: 540px;
     background-color: var(--salmon);
 }
+
 div div {
     color: var(--blue);
     font-size: 20px;
     border: solid 2px var(--brown);
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -58,15 +61,13 @@ div div {
         background-color: var(--rustRed);
     }
 }
+
 div {
-    display: flex;
-    justify-content: center;
     height: 50vh;
 }
 
-button {
-    height: 30%;
-    font-size: 20px;
+#button {   
+    font-size: 15px;
     background-color: var(--beigh);
     animation-name: blink;
     animation-duration: 2s;

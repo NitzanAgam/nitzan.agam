@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Grid</title>
+    <title>Nitzan Agam CV</title>
     <link rel="stylesheet" href="CVgrid.CSS"> <!--linking the CSS file to the HTMl file-->
 </head>
 <body>
     <div id="GridContainer">
         <div id="item1">Nitzan Agam CV</div>
-        <div id="item2">Data Analyst<br>System Analyst<br>BI Developer</div>
-        <div id="item3">My contact info:  <br><br> 
-            <button id="button" onclick="thankYou()">Click To linkedin URL</button><br><br>
+        <div id="item2">Data Analyst at Wix.com<br>System Analyst at GIV Solutions Ltd</div>
+        <div id="item3">My contact info:
+            <button id="button" onclick="thankYou()">Email</button><br>
+            <a href="https://www.linkedin.com/in/nitzan-agam/" target="_blank">Let's connect on linkdin</a>
+            <h4>Contact Us!</h4>
+            <form action="" method="">     
+                <input type="text" name="Fid" id="id1" placeholder="Enter Your ID" minlength="9" maxlength="9" required> <br>    
+                <input type="email" name="Fadress" id="Fadress1" placeholder="Your Email" required> <br>
+                <textarea name="" cols="30" rows="10" required placeholder="Enter your request here:"></textarea><br>
+                <button onclick="myFunction()">Submit Your Request</button>
+            </form>            
+            <p id="demo"></p>
         </div>
     </div>
 </body>
